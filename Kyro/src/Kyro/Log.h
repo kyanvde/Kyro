@@ -16,17 +16,17 @@ namespace Kyro {
     };
 
     // Core log macros
-    #define KO_ENGINE_TRACE(...)    ::Hazel::Log::getEngineLogger()->trace(__VA_ARGS__)
-    #define KO_ENGINE_INFO(...)     ::Hazel::Log::getEngineLogger()->info(__VA_ARGS__)
-    #define KO_ENGINE_WARN(...)     ::Hazel::Log::getEngineLogger()->warn(__VA_ARGS__)
-    #define KO_ENGINE_ERROR(...)    ::Hazel::Log::getEngineLogger()->error(__VA_ARGS__)
-    #define KO_ENGINE_CRITICAL(...) ::Hazel::Log::getEngineLogger()->critical(__VA_ARGS__)
+    #define KO_ENGINE_TRACE(...)    ::Kyro::Log::getEngineLogger()->trace(__VA_ARGS__)
+    #define KO_ENGINE_INFO(...)     ::Kyro::Log::getEngineLogger()->info(__VA_ARGS__)
+    #define KO_ENGINE_WARN(...)     ::Kyro::Log::getEngineLogger()->warn(__VA_ARGS__)
+    #define KO_ENGINE_ERROR(...)    ::Kyro::Log::getEngineLogger()->error(__VA_ARGS__)
+    #define KO_ENGINE_CRITICAL(...) ::Kyro::Log::getEngineLogger()->critical(__VA_ARGS__)
 
     // Client log macros
-    #define KO_TRACE(...)         ::Hazel::Log::getClientLogger()->trace(__VA_ARGS__)
-    #define KO_INFO(...)          ::Hazel::Log::getClientLogger()->info(__VA_ARGS__)
-    #define KO_WARN(...)          ::Hazel::Log::getClientLogger()->warn(__VA_ARGS__)
-    #define KO_ERROR(...)         ::Hazel::Log::getClientLogger()->error(__VA_ARGS__)
-    #define KO_CRITICAL(...)      ::Hazel::Log::getClientLogger()->critical(__VA_ARGS__)
+    #define KO_TRACE(...)         ::Kyro::Log::getClientLogger()->trace(__VA_ARGS__)
+    #define KO_INFO(...)          ::Kyro::Log::getClientLogger()->info(__VA_ARGS__)
+    #define KO_WARN(...)          ::Kyro::Log::getClientLogger()->warn(__VA_ARGS__)
+    #define KO_ERROR(...)         ::Kyro::Log::getClientLogger()->error(__VA_ARGS__)
+    #define KO_CRITICAL(...)      ::Kyro::Log::getClientLogger()->critical(__VA_ARGS__)
 }
 
