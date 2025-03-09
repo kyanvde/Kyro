@@ -3,13 +3,15 @@ add_library(Kyro SHARED
         src/Kyro/Application.cpp
         src/Kyro/Core.h
         src/Kyro/EntryPoint.h
+        src/Kyro/Log.cpp
+        src/Kyro/Log.h
 )
 
 # Include Kyro.h
 target_include_directories(Kyro PUBLIC ${CMAKE_SOURCE_DIR}/Kyro/src/)
 
-# Include spdlog
-target_include_directories(Kyro PRIVATE ${CMAKE_SOURCE_DIR}/Kyro/vendor/spdlog/include)
+# Link spdlog to Kyro
+target_link_libraries(Kyro PRIVATE spdlog)
 
 # Define platform macros
 if(WIN32)
