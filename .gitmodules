@@ -1,0 +1,3 @@
+[submodule "Kyro/vendor/spdlog"]
+	path = Kyro/vendor/spdlog
+	url = git@github.com:gabime/spdlog.git
